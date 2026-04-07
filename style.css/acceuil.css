@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1{
+    font-size: 8vw;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+h2{
+    font-size: 3vw;
+    text-transform: uppercase;
+    padding: 3vw;
+}
+.carte{
+    display: flex;
+    flex-wrap: wrap;
+}
+.id{
+    margin: 2vw;
+    background: rgb(52, 49, 49);
+    color: whitesmoke;
+    width: 16%;
+    height: 20vw;
+    text-align: center;
+    border-radius: 1.5vw;
+    text-transform: uppercase;
+
+
+}
+.id p{
+    background: green;
+    
+}
+.btn button{
+    margin: auto;
+    width: 10vw;
+    height: 3vw;
+    font-size: 2vw;
+    text-transform: uppercase;
+    border-radius: 1vw;
+    border: none;
+    background: linear-gradient(black,whitesmoke);
+}
