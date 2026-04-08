@@ -3,6 +3,13 @@
     padding: 0;
     box-sizing: border-box;
 }
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    /* Empêche le scroll horizontal indésirable */
+    overflow-x: hidden; 
+}
 #acceuil{
     /* Chemin vers votre image */
     background-image: url('../public/blue-gradient-background-6517.jpeg');
@@ -15,7 +22,7 @@
     background-color: rgba(104, 103, 103, 0.5); 
     padding-top: 80px;
     overflow-x: hidden;
-    padding: 3vw;
+    padding: 1vw;
 }
 
 .body {
@@ -24,25 +31,24 @@
     font-family: 'Inter', sans-serif;
 }
 .navbar {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
     background: radial-gradient(circle at center, #224b8f ,#010a15 );
     height: 90px;
     width: 100%;
     display: flex;
     align-items: center;
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
     position: absolute;
 }
 
 .nav-container {
-    padding: 3vw;
+    padding: 0 5%;
 
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    box-sizing: border-box;
 }
 .logo-wrapper {
     display: flex;
@@ -86,7 +92,7 @@ h1 {
     font-size: 9vw;
     font-weight: 800;
     color: white;
-    margin: 40px;
+    margin: 20px 20px;
     letter-spacing: 10px;
     opacity: 0.2; /* Texte fantôme comme sur la maquette */
 }
@@ -94,7 +100,7 @@ h1 {
 h2 {
     font-size: 3vw;
     color: white;
-    margin-top: -4vw; /* Remonte pour être sous le H1 */
+    margin-top: -3vw; /* Remonte pour être sous le H1 */
     margin-bottom: 30px;
     text-transform: capitalize;
     padding: 0vw 2vw;
@@ -104,9 +110,9 @@ h2 {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    gap: 3vw;
+    gap: 1vw;
     width: 100%;
-    margin: 50px 100px;
+    margin: 10px 10px;
 }
 .id{
     background: rgba(255, 255, 255, 0.05); /* Transparent */
@@ -196,4 +202,112 @@ h2 {
 .vote-btn:hover {
     transform: scale(1.05);
     box-shadow: 0 15px 30px rgba(0, 242, 255, 0.5);
+}
+
+/* --- CETTE PARTIE NE S'APPLIQUE QU'AUX ÉCRANS MOBILES ET TABLETTES --- */
+@media (max-width: 1024px) {
+    .navbar{
+    position: relative;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    }
+    .container-id {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+        width: 100%;
+        padding: 10px;
+    }
+    h1{
+        font-size: 15vw;
+    }
+    h2{
+        font-size: 5vw;
+    }
+    .carte{
+        align-items: center;
+        justify-content: center;
+        margin: 1px;
+    }
+    .id {
+        flex: 1 1 280px; /* Les cartes s'adaptent à la largeur disponible */
+        max-width: 40vw;
+        max-height: 1vw !important; /* Plus grande pour mobile */
+        margin-bottom: 20px;
+    }
+
+    .user-id-label {
+        font-size: 50px !important; /* Très grand pour être bien visible sur téléphone */
+    }
+
+    .card-header h3 {
+        font-size: 18px !important; /* Titre du poste bien lisible sur mobile */
+    }
+
+    /* Ajustement de la navbar pour libérer de l'espace */
+    .sub-brand {
+        display: none; 
+    }
+    
+    .nav-welcome {
+        font-size: 12px;
+        text-align: center;
+    }
+}
+
+/* --- OPTIONNEL : Pour les très petits écrans (iPhone SE, etc.) --- */
+@media (max-width: 480px) {
+    .navbar{
+    position: relative;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px); 
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    .user-id-label {
+        font-size: 70px !important;
+    }
+    
+    #acceuil {
+        padding-top: 100px; /* Évite que la navbar cache le premier poste */
+    }
+    .carte{
+        margin: 0;
+    }
+    h1{
+        font-size: 20vw;
+        margin: 0;
+        padding: 1vw 2vw;
+        letter-spacing: normal;
+    }
+    h2{
+        font-size: 8vw;
+        margin: 1vw;
+    }
+    .id{
+        max-width: 70vw;
+    }
+    #acceuil{
+        margin: 0;
+        padding: 0;
+    }
+}
+.container-id {
+    display: flex;
+    flex-wrap: wrap;         /* Passage à la ligne auto */
+    justify-content: center;   /* Centrage horizontal parfait */
+    align-items: center;       /* Centrage vertical */
+    gap: 25px;
+    width: 100%;
+    max-width: 1400px;       /* Sécurité pour très grands écrans */
+    margin: 0 auto;          /* Centrage du bloc parent */
+    padding: 20px;
+}
+
+/* 2. Taille progressive des cartes (PC -> Tablette) */
+.id {
+    /* La carte s'adapte entre 260px et 320px selon la place */
+    flex: 0 1 clamp(260px, 22vw, 320px); 
+    min-height: 350px;
+    margin: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
