@@ -8,17 +8,18 @@
 
 body {
     font-family: 'Instrument Sans', sans-serif;
-    background: #F8FAFC;
+    background: #0d1b2a;
     display: flex;
     min-height: 100vh;
+    color: #e0e8f0;
 }
 
 /* Sidebar */
 aside {
     width: 280px;
     padding: 24px;
-    background: white;
-    border-right: 1px solid #E2E8F0;
+    background: #1a2942;
+    border-right: 1px solid #2d3f52;
     position: sticky;
     top: 0;
     height: 100vh;
@@ -36,7 +37,7 @@ aside {
 .logo-icon {
     width: 32px;
     height: 32px;
-    background: #0F172A;
+    background: #0a7ea4;
     border-radius: 6px;
     display: flex;
     align-items: center;
@@ -48,7 +49,7 @@ aside {
 .logo h1 {
     font-size: 20px;
     font-weight: 500;
-    color: #0F172A;
+    color: #ffffff;
 }
 
 nav {
@@ -65,28 +66,28 @@ nav a {
     padding: 10px 12px;
     border-radius: 6px;
     text-decoration: none;
-    color: #64748B;
+    color: #94a3b8;
     font-size: 14px;
     transition: all 0.2s;
 }
 
 nav a:hover,
 nav a.active {
-    background: #F1F5F9;
-    color: #0F172A;
+    background: #2d3f52;
+    color: #ffffff;
 }
 
 .sidebar-footer {
     margin-top: auto;
     padding-top: 16px;
-    border-top: 1px solid #E2E8F0;
+    border-top: 1px solid #2d3f52;
 }
 
 .back-link {
     display: block;
     padding: 10px 12px;
     text-align: center;
-    background: #0F172A;
+    background: #0a7ea4;
     color: white;
     text-decoration: none;
     border-radius: 6px;
@@ -96,18 +97,18 @@ nav a.active {
 }
 
 .back-link:hover {
-    background: #1E293B;
+    background: #0891b2;
 }
 
 /* Main Content */
 main {
     flex: 1;
     padding: 32px;
-    background: white;
+    background: #0d1b2a;
     border-top-left-radius: 16px;
     margin-top: 16px;
     margin-left: -1px;
-    box-shadow: 0 1px 2px rgba(0,0,0,0.02);
+    box-shadow: 0 1px 2px rgba(0,0,0,0.3);
 }
 
 .section {
@@ -124,19 +125,19 @@ main {
     font-weight: 500;
     text-transform: uppercase;
     letter-spacing: 0.05em;
-    color: #64748B;
+    color: #64748b;
     margin-bottom: 8px;
 }
 
 .section-header h2 {
     font-size: 32px;
     font-weight: 500;
-    color: #0F172A;
+    color: #ffffff;
     margin-bottom: 8px;
 }
 
 .section-header p {
-    color: #64748B;
+    color: #94a3b8;
     font-size: 16px;
 }
 
@@ -153,20 +154,20 @@ main {
     align-items: center;
     gap: 16px;
     padding: 24px;
-    background: white;
-    border: 1px solid #E2E8F0;
+    background: #1a2942;
+    border: 1px solid #2d3f52;
     border-radius: 8px;
     transition: border-color 0.2s;
 }
 
 .stat-card:hover {
-    border-color: #0F172A;
+    border-color: #0a7ea4;
 }
 
 .stat-icon {
     width: 48px;
     height: 48px;
-    background: #F1F5F9;
+    background: #2d3f52;
     border-radius: 8px;
     display: flex;
     align-items: center;
@@ -180,20 +181,20 @@ main {
 
 .stat-label {
     font-size: 13px;
-    color: #64748B;
+    color: #94a3b8;
     margin-bottom: 4px;
 }
 
 .stat-value {
     font-size: 28px;
     font-weight: 600;
-    color: #0F172A;
+    color: #ffffff;
 }
 
 /* Chart Container */
 .chart-container {
-    background: white;
-    border: 1px solid #E2E8F0;
+    background: #1a2942;
+    border: 1px solid #2d3f52;
     border-radius: 8px;
     padding: 32px;
     margin-bottom: 24px;
@@ -226,7 +227,7 @@ main {
 .bar-value {
     font-size: 20px;
     font-weight: 600;
-    color: #0F172A;
+    color: #ffffff;
     margin-bottom: 12px;
     height: 28px;
 }
@@ -234,7 +235,7 @@ main {
 .bar {
     width: 100%;
     max-width: 120px;
-    background: #F1F5F9;
+    background: #2d3f52;
     border-radius: 6px 6px 0 0;
     position: relative;
     transition: all 0.3s;
@@ -247,7 +248,7 @@ main {
 .bar-fill {
     width: 100%;
     height: 100%;
-    background: linear-gradient(180deg, #0F172A 0%, #1E293B 100%);
+    background: linear-gradient(180deg, #0a7ea4 0%, #0891b2 100%);
     border-radius: 6px 6px 0 0;
 }
 
@@ -260,13 +261,13 @@ main {
 .bar-name {
     font-size: 14px;
     font-weight: 500;
-    color: #0F172A;
+    color: #ffffff;
     margin-bottom: 4px;
 }
 
 .bar-percent {
     font-size: 13px;
-    color: #64748B;
+    color: #94a3b8;
 }
 
 /* Winner Banner */
@@ -275,8 +276,8 @@ main {
     align-items: center;
     gap: 16px;
     padding: 20px 24px;
-    background: linear-gradient(135deg, #FEF3C7 0%, #FDE68A 100%);
-    border: 1px solid #FCD34D;
+    background: linear-gradient(135deg, #0a7ea4 0%, #0891b2 100%);
+    border: 1px solid #0c9fd9;
     border-radius: 8px;
 }
 
@@ -293,20 +294,20 @@ main {
     font-weight: 500;
     text-transform: uppercase;
     letter-spacing: 0.05em;
-    color: #92400E;
+    color: #e0e8f0;
     margin-bottom: 4px;
 }
 
 .winner-name {
     font-size: 18px;
     font-weight: 600;
-    color: #78350F;
+    color: #ffffff;
 }
 
 /* Table */
 .table-container {
-    background: white;
-    border: 1px solid #E2E8F0;
+    background: #1a2942;
+    border: 1px solid #2d3f52;
     border-radius: 8px;
     overflow: hidden;
 }
@@ -317,7 +318,7 @@ main {
 }
 
 .results-table thead {
-    background: #F8FAFC;
+    background: #0d1b2a;
 }
 
 .results-table th {
@@ -327,32 +328,33 @@ main {
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 0.05em;
-    color: #64748B;
-    border-bottom: 1px solid #E2E8F0;
+    color: #64748b;
+    border-bottom: 1px solid #2d3f52;
 }
 
 .results-table td {
     padding: 16px 20px;
     font-size: 14px;
-    color: #0F172A;
-    border-bottom: 1px solid #F1F5F9;
+    color: #e0e8f0;
+    border-bottom: 1px solid #2d3f52;
 }
 
 .results-table tbody tr:hover {
-    background: #F8FAFC;
+    background: #2d3f52;
 }
 
 .role-cell {
     font-weight: 600;
-    color: #0F172A;
-    background: #F8FAFC;
-    border-right: 1px solid #E2E8F0;
+    color: #ffffff;
+    background: #0d1b2a;
+    border-right: 1px solid #2d3f52;
 }
 
 .winner-row td:nth-child(2),
 .winner-row td:nth-child(3),
 .winner-row td:nth-child(4) {
     font-weight: 600;
+    color: #0a7ea4;
 }
 
 /* Badges */
@@ -367,21 +369,21 @@ main {
 }
 
 .badge-winner {
-    background: #FEF3C7;
-    color: #78350F;
-    border: 1px solid #FCD34D;
+    background: #0a7ea4;
+    color: #ffffff;
+    border: 1px solid #0c9fd9;
 }
 
 .badge-second {
-    background: #E0E7FF;
-    color: #3730A3;
-    border: 1px solid #C7D2FE;
+    background: #2d3f52;
+    color: #0a7ea4;
+    border: 1px solid #3d5a80;
 }
 
 .badge-third {
-    background: #FEE2E2;
-    color: #991B1B;
-    border: 1px solid #FECACA;
+    background: #2d3f52;
+    color: #94a3b8;
+    border: 1px solid #3d5a80;
 }
 
 /* Responsive */
