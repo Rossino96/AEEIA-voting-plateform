@@ -3,25 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css/loggin.css">
+    <link rel="stylesheet" href="style/loggin.css">
     <title>Document</title>
 </head>
-    <body class="body">
-    <div class="connexion">
-        <div class="h4">
-            <h4>Connexion</h4>
-        </div>
-        <form class="FORM">
-           
-            <label for="email">Email:</label>
-                <input type="text" name="email" id="email" placeholder="Rossino@gmail.com....">
-            <label for="mdp">Mot de passe:</label>
-                <input type="text" name="mdp" id="mdp" placeholder="*********">
-            <div class="btn">
-                <a href="vote.html"><button class="button">Se connecter</button></a>
+    <body>
+    <div class="login-page">
+        <div class="bg-text">AEEIA</div>
+
+        <div class="login-card">
+            <div class="login-header">
+                <div class="logo-icon">
+                    <svg viewBox="0 0 100 100">
+                        <circle cx="50" cy="50" r="20" fill="none" stroke="#00f2ff" stroke-width="2"/>
+                        <path d="M50 20 V30 M50 70 V80 M20 50 H30 M70 50 H80" stroke="#00f2ff" stroke-width="2"/>
+                        <circle cx="50" cy="50" r="5" fill="#00f2ff"/>
+                    </svg>
+                </div>
+                <h2>Identification</h2>
+                <p>Accès sécurisé au portail de vote</p>
             </div>
-        </form>
-        <!-- //ny absolute mtady parent relative -->
+
+            <form class="login-form"> 
+                <div class="input-group">
+                    <label>Adress Email</label>
+                    <input type="text" placeholder="Ex: Example@gmail.com...." required>
+                </div>
+                
+                <div class="input-group">
+                    <label>Code d'accès</label>
+                    <input type="password" placeholder="••••••••" required>
+                </div>
+
+                <a href="vote.html"><button type="submit" class="login-btn">Se Connecter</button></a>
+            </form>
+
+            <div class="login-footer">
+                <a href="acceuil.html">Retour à l'accueil</a>
+            </div>
+        </div>
     </div>
 </body>
 </html>

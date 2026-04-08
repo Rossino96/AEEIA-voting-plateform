@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administration - Système de Vote</title>
+    <link rel="stylesheet" href="style/adminstyle.css">
+</head>
+<body>
+    <aside>
+        <div class="logo">
+            <div class="logo-icon">⚙️</div>
+            <h1>Admin Panel</h1>
+        </div>
+
+        <nav>
+            <a href="#overview" class="active"> Vue d'ensemble</a>
+            <a href="#president"> Président</a>
+            <a href="#vice-president">Vice-président</a>
+            <a href="#secretaire"> Secrétaire</a>
+            <a href="#commissaire">Commissaire</a>
+            <a href="#detailed"> Résultats détaillés</a>
+        </nav>
+
+        <div class="sidebar-footer">
+            <a href="vote.html" class="back-link">← Retour au vote</a>
+        </div>
+    </aside>
+
+    <main>
+        <!-- Vue d'ensemble -->
+        <section id="overview" class="section">
+            <div class="section-header">
+                <h2>Vue d'ensemble</h2>
+                <p>Statistiques globales du scrutin 2026</p>
+            </div>
+
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-icon">🗳️</div>
+                    <div class="stat-info">
+                        <div class="stat-label">Total des votes</div>
+                        <div class="stat-value">247</div>
+                    </div>
+                </div>
+
+                <div class="stat-card">
+                    <div class="stat-icon">👥</div>
+                    <div class="stat-info">
+                        <div class="stat-label">Électeurs inscrits</div>
+                        <div class="stat-value">350</div>
+                    </div>
+                </div>
+
+                <div class="stat-card">
+                    <div class="stat-icon">📊</div>
+                    <div class="stat-info">
+                        <div class="stat-label">Taux de participation</div>
+                        <div class="stat-value">70.6%</div>
+                    </div>
+                </div>
+
+                <div class="stat-card">
+                    <div class="stat-icon">🏆</div>
+                    <div class="stat-info">
+                        <div class="stat-label">Postes à pourvoir</div>
+                        <div class="stat-value">4</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Président -->
+        <section id="president" class="section">
+            <div class="section-header">
+                <div class="section-label">Résultats</div>
+                <h2>Président</h2>
+                <p>105 votes exprimés</p>
+            </div>
+
+            <div class="chart-container">
+                <div class="chart">
+                    <div class="bar-group">
+                        <div class="bar-wrapper">
+                            <div class="bar-value">45</div>
+                            <div class="bar" style="height: 90%;">
+                                <div class="bar-fill"></div>
+                            </div>
+                            <div class="bar-label">
+                                <div class="bar-name">Jean Dupont</div>
+                                <div class="bar-percent">42.9%</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bar-group">
+                        <div class="bar-wrapper">
+                            <div class="bar-value">38</div>
+                            <div class="bar" style="height: 76%;">
+                                <div class="bar-fill"></div>
+                            </div>
+                            <div class="bar-label">
+                                <div class="bar-name">Marie Martin</div>
+                                <div class="bar-percent">36.2%</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bar-group">
+                        <div class="bar-wrapper">
+                            <div class="bar-value">22</div>
+                            <div class="bar" style="height: 44%;">
+                                <div class="bar-fill"></div>
+                            </div>
+                            <div class="bar-label">
+                                <div class="bar-name">Pierre Bernard</div>
+                                <div class="bar-percent">21.0%</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="winner-banner">
+                <div class="winner-icon">🏆</div>
+                <div class="winner-info">
+                    <div class="winner-title">Candidat en tête</div>
+                    <div class="winner-name">Jean Dupont - 45 votes (42.9%)</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Vice-président -->
+        <section id="vice-president" class="section">
+            <div class="section-header">
+                <div class="section-label">Résultats</div>
+                <h2>Vice-président</h2>
+                <p>98 votes exprimés</p>
+            </div>
+
+            <div class="chart-container">
+                <div class="chart">
+                    <div class="bar-group">
+                        <div class="bar-wrapper">
+                            <div class="bar-value">56</div>
+                            <div class="bar" style="height: 90%;">
+                                <div class="bar-fill"></div>
+                            </div>
+                            <div class="bar-label">
+                                <div class="bar-name">Sophie Laurent</div>
+                                <div class="bar-percent">57.1%</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bar-group">
+                        <div class="bar-wrapper">
+                            <div class="bar-value">42</div>
+                            <div class="bar" style="height: 68%;">
+                                <div class="bar-fill"></div>
+                            </div>
+                            <div class="bar-label">
+                                <div class="bar-name">Luc Moreau</div>
+                                <div class="bar-percent">42.9%</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="winner-banner">
+                <div class="winner-icon">🏆</div>
+                <div class="winner-info">
+                    <div class="winner-title">Candidat en tête</div>
+                    <div class="winner-name">Sophie Laurent - 56 votes (57.1%)</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Secrétaire -->
+        <section id="secretaire" class="section">
+            <div class="section-header">
+                <div class="section-label">Résultats</div>
+                <h2>Secrétaire</h2>
+                <p>87 votes exprimés</p>
+            </div>
+
+            <div class="chart-container">
+                <div class="chart">
+                    <div class="bar-group">
+                        <div class="bar-wrapper">
+                            <div class="bar-value">51</div>
+                            <div class="bar" style="height: 90%;">
+                                <div class="bar-fill"></div>
+                            </div>
+                            <div class="bar-label">
+                                <div class="bar-name">Claire Dubois</div>
+                                <div class="bar-percent">58.6%</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bar-group">
+                        <div class="bar-wrapper">
+                            <div class="bar-value">36</div>
+                            <div class="bar" style="height: 64%;">
+                                <div class="bar-fill"></div>
+                            </div>
+                            <div class="bar-label">
+                                <div class="bar-name">Antoine Petit</div>
+                                <div class="bar-percent">41.4%</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="winner-banner">
+                <div class="winner-icon">🏆</div>
+                <div class="winner-info">
+                    <div class="winner-title">Candidat en tête</div>
+                    <div class="winner-name">Claire Dubois - 51 votes (58.6%)</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Commissaire au compte -->
+        <section id="commissaire" class="section">
+            <div class="section-header">
+                <div class="section-label">Résultats</div>
+                <h2>Commissaire au compte</h2>
+                <p>57 votes exprimés</p>
+            </div>
+
+            <div class="chart-container">
+                <div class="chart">
+                    <div class="bar-group">
+                        <div class="bar-wrapper">
+                            <div class="bar-value">32</div>
+                            <div class="bar" style="height: 90%;">
+                                <div class="bar-fill"></div>
+                            </div>
+                            <div class="bar-label">
+                                <div class="bar-name">Françoise Leroy</div>
+                                <div class="bar-percent">56.1%</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bar-group">
+                        <div class="bar-wrapper">
+                            <div class="bar-value">25</div>
+                            <div class="bar" style="height: 70%;">
+                                <div class="bar-fill"></div>
+                            </div>
+                            <div class="bar-label">
+                                <div class="bar-name">Marc Rousseau</div>
+                                <div class="bar-percent">43.9%</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="winner-banner">
+                <div class="winner-icon">🏆</div>
+                <div class="winner-info">
+                    <div class="winner-title">Candidat en tête</div>
+                    <div class="winner-name">Françoise Leroy - 32 votes (56.1%)</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Résultats détaillés -->
+        <section id="detailed" class="section">
+            <div class="section-header">
+                <h2>Résultats détaillés</h2>
+                <p>Tableau récapitulatif de tous les votes</p>
+            </div>
+
+            <div class="table-container">
+                <table class="results-table">
+                    <thead>
+                        <tr>
+                            <th>Poste</th>
+                            <th>Candidat</th>
+                            <th>Votes</th>
+                            <th>Pourcentage</th>
+                            <th>Statut</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="winner-row">
+                            <td rowspan="3" class="role-cell">Président</td>
+                            <td>Jean Dupont</td>
+                            <td><strong>45</strong></td>
+                            <td><strong>42.9%</strong></td>
+                            <td><span class="badge badge-winner">🏆 En tête</span></td>
+                        </tr>
+                        <tr>
+                            <td>Marie Martin</td>
+                            <td>38</td>
+                            <td>36.2%</td>
+                            <td><span class="badge badge-second">2ème</span></td>
+                        </tr>
+                        <tr>
+                            <td>Pierre Bernard</td>
+                            <td>22</td>
+                            <td>21.0%</td>
+                            <td><span class="badge badge-third">3ème</span></td>
+                        </tr>
+
+                        <tr class="winner-row">
+                            <td rowspan="2" class="role-cell">Vice-président</td>
+                            <td>Sophie Laurent</td>
+                            <td><strong>56</strong></td>
+                            <td><strong>57.1%</strong></td>
+                            <td><span class="badge badge-winner">🏆 En tête</span></td>
+                        </tr>
+                        <tr>
+                            <td>Luc Moreau</td>
+                            <td>42</td>
+                            <td>42.9%</td>
+                            <td><span class="badge badge-second">2ème</span></td>
+                        </tr>
+
+                        <tr class="winner-row">
+                            <td rowspan="2" class="role-cell">Secrétaire</td>
+                            <td>Claire Dubois</td>
+                            <td><strong>51</strong></td>
+                            <td><strong>58.6%</strong></td>
+                            <td><span class="badge badge-winner">🏆 En tête</span></td>
+                        </tr>
+                        <tr>
+                            <td>Antoine Petit</td>
+                            <td>36</td>
+                            <td>41.4%</td>
+                            <td><span class="badge badge-second">2ème</span></td>
+                        </tr>
+
+                        <tr class="winner-row">
+                            <td rowspan="2" class="role-cell">Commissaire</td>
+                            <td>Françoise Leroy</td>
+                            <td><strong>32</strong></td>
+                            <td><strong>56.1%</strong></td>
+                            <td><span class="badge badge-winner">🏆 En tête</span></td>
+                        </tr>
+                        <tr>
+                            <td>Marc Rousseau</td>
+                            <td>25</td>
+                            <td>43.9%</td>
+                            <td><span class="badge badge-second">2ème</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

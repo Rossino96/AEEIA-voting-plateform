@@ -1,12 +1,212 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css/vote.css">
-    <title>Document</title>
+    <title>Système de Vote</title>
+    <link rel="stylesheet" href="style/vote.css">
 </head>
 <body>
-    
+    <aside>
+        <div class="logo">
+            <div class="logo-icon">🗳️</div>
+            <h1>VotePortal</h1>
+        </div>
+
+        <nav>
+            <a href="#president">Président</a>
+            <a href="#vice-president">Vice-président</a>
+            <a href="#secretaire">Secrétaire</a>
+            <a href="#commissaire">Commissaire au compte</a>
+            <a href="#Tresorier">Tresorier</a>
+        </nav>
+    </aside>
+
+    <main>
+        <!-- Section Président -->
+        <section id="president" class="section">
+            <div class="section-header">
+                <div class="section-label">Scrutin 2026</div>
+                <h2>Président</h2>
+                <p>Sélectionnez le candidat pour lequel vous souhaitez voter.</p>
+            </div>
+
+            <div class="candidates-grid">
+                <div class="candidate-card">
+                    <div class="candidate-header">
+                        <div class="candidate-avatar">JD</div>
+                        <div class="vote-badge">0 votes</div>
+                    </div>
+                    <div class="candidate-info">
+                        <h3>Jean Dupont</h3>
+                        <p>Expérience de 15 ans en gestion d'entreprise. Visionnaire et engagé pour la transparence.</p>
+                    </div>
+                    <button class="vote-button">✓ Voter</button>
+                </div>
+
+                <div class="candidate-card">
+                    <div class="candidate-header">
+                        <div class="candidate-avatar">MM</div>
+                        <div class="vote-badge">0 votes</div>
+                    </div>
+                    <div class="candidate-info">
+                        <h3>Marie Martin</h3>
+                        <p>Spécialiste en développement durable. Propose des initiatives innovantes pour l'avenir.</p>
+                    </div>
+                    <button class="vote-button">✓ Voter</button>
+                </div>
+
+                <div class="candidate-card">
+                    <div class="candidate-header">
+                        <div class="candidate-avatar">PB</div>
+                        <div class="vote-badge">0 votes</div>
+                    </div>
+                    <div class="candidate-info">
+                        <h3>Pierre Bernard</h3>
+                        <p>Ancien directeur financier. Expertise reconnue en gestion stratégique et budgétaire.</p>
+                    </div>
+                    <button class="vote-button">✓ Voter</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Vice-président -->
+        <section id="vice-president" class="section">
+            <div class="section-header">
+                <div class="section-label">Scrutin 2026</div>
+                <h2>Vice-président</h2>
+                <p>Sélectionnez le candidat pour lequel vous souhaitez voter.</p>
+            </div>
+
+            <div class="candidates-grid">
+                <div class="candidate-card">
+                    <div class="candidate-header">
+                        <div class="candidate-avatar">SL</div>
+                        <div class="vote-badge">0 votes</div>
+                    </div>
+                    <div class="candidate-info">
+                        <h3>Sophie Laurent</h3>
+                        <p>Diplomate et négociatrice hors pair. Connue pour ses compétences en résolution de conflits.</p>
+                    </div>
+                    <button class="vote-button">✓ Voter</button>
+                </div>
+
+                <div class="candidate-card">
+                    <div class="candidate-header">
+                        <div class="candidate-avatar">LM</div>
+                        <div class="vote-badge">0 votes</div>
+                    </div>
+                    <div class="candidate-info">
+                        <h3>Luc Moreau</h3>
+                        <p>Coordinateur de projets avec 10 ans d'expérience. Orienté résultats et travail d'équipe.</p>
+                    </div>
+                    <button class="vote-button">✓ Voter</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Secrétaire -->
+        <section id="secretaire" class="section">
+            <div class="section-header">
+                <div class="section-label">Scrutin 2026</div>
+                <h2>Secrétaire</h2>
+                <p>Sélectionnez le candidat pour lequel vous souhaitez voter.</p>
+            </div>
+
+            <div class="candidates-grid">
+                <div class="candidate-card">
+                    <div class="candidate-header">
+                        <div class="candidate-avatar">CD</div>
+                        <div class="vote-badge">0 votes</div>
+                    </div>
+                    <div class="candidate-info">
+                        <h3>Claire Dubois</h3>
+                        <p>Organisée et méticuleuse. Maîtrise parfaite des outils de gestion administrative.</p>
+                    </div>
+                    <button class="vote-button">✓ Voter</button>
+                </div>
+
+                <div class="candidate-card">
+                    <div class="candidate-header">
+                        <div class="candidate-avatar">AP</div>
+                        <div class="vote-badge">0 votes</div>
+                    </div>
+                    <div class="candidate-info">
+                        <h3>Antoine Petit</h3>
+                        <p>Spécialiste en communication interne. Garantit une circulation fluide de l'information.</p>
+                    </div>
+                    <button class="vote-button">✓ Voter</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Commissaire au compte -->
+        <section id="commissaire" class="section">
+            <div class="section-header">
+                <div class="section-label">Scrutin 2026</div>
+                <h2>Commissaire au compte</h2>
+                <p>Sélectionnez le candidat pour lequel vous souhaitez voter.</p>
+            </div>
+
+            <div class="candidates-grid">
+                <div class="candidate-card">
+                    <div class="candidate-header">
+                        <div class="candidate-avatar">FL</div>
+                        <div class="vote-badge">0 votes</div>
+                    </div>
+                    <div class="candidate-info">
+                        <h3>Françoise Leroy</h3>
+                        <p>Expert-comptable certifié. Rigueur et intégrité dans la gestion financière.</p>
+                    </div>
+                    <button class="vote-button">✓ Voter</button>
+                </div>
+
+                <div class="candidate-card">
+                    <div class="candidate-header">
+                        <div class="candidate-avatar">MR</div>
+                        <div class="vote-badge">0 votes</div>
+                    </div>
+                    <div class="candidate-info">
+                        <h3>Marc Rousseau</h3>
+                        <p>Auditeur financier avec 12 ans d'expérience. Transparent et méthodique.</p>
+                    </div>
+                    <button class="vote-button">✓ Voter</button>
+                </div>
+            </div>
+        </section>
+                <!-- tresorier -->
+        <section id="commissaire" class="section">
+            <div class="section-header">
+                <div class="section-label">Scrutin 2026</div>
+                <h2>Tresorier</h2>
+                <p>Sélectionnez le candidat pour lequel vous souhaitez voter.</p>
+            </div>
+            <div class="candidates-grid">
+                <div class="candidate-card">
+                    <div class="candidate-header">
+                        <div class="candidate-avatar">R</div>
+                        <div class="vote-badge">0 votes</div>
+                    </div>
+                    <div class="candidate-info">
+                        <h3>Rossino</h3>
+                        <p>Expert-comptable certifié. Rigueur et intégrité dans la gestion financière.</p>
+                    </div>
+                    <button class="vote-button">✓ Voter</button>
+                </div>
+
+                <div class="candidate-card">
+                    <div class="candidate-header">
+                        <div class="candidate-avatar">M</div>
+                        <div class="vote-badge">0 votes</div>
+                    </div>
+                    <div class="candidate-info">
+                        <h3>Manda</h3>
+                        <p>Auditeur financier avec 12 ans d'expérience. Transparent et méthodique.</p>
+                    </div>
+                    <button class="vote-button">✓ Voter</button>
+                </div>
+            </div>
+        </section>
+    </main>
 </body>
 </html>

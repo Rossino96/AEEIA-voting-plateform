@@ -3,41 +3,98 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css/acceuil.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="style/acceuil.css">
+    <title>Portail de Vote AEEIA</title>
 </head>
-<body>
-    <h1>AEEIA</h1>
-    <h2>vote de membre de bureau</h2>
-    <div class="carte">
-        <div class="id">
-            <h3>president</h3>
-            <br>
-            <p>p</p>
+<body class="body">
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo-wrapper">
+                <div class="logo-icon">
+                    <svg viewBox="0 0 100 100">
+                        <circle cx="50" cy="50" r="20" fill="none" stroke="#00f2ff" stroke-width="2"/>
+                        <path d="M50 20 V30 M50 70 V80 M20 50 H30 M70 50 H80" stroke="#00f2ff" stroke-width="2"/>
+                        <circle cx="50" cy="50" r="5" fill="#00f2ff"/>
+                    </svg>
+                </div>
+                <div class="logo-text">
+                    <span class="main-brand">AEEIA</span>
+                    <span class="sub-brand">Association Étudiants Électronique Informatique Ambohitsaina</span>
+                </div>
+            </div>
+
+            <div class="nav-welcome">
+                BIENVENUE SUR LE PORTAIL DE VOTE AEEIA
+            </div>
         </div>
-        <div class="id">
-            <h3>vice-president </h3>
-            <br>
-            <p>vp</p>
+    </nav>
+
+    <section id="acceuil">
+        <div class="hero-titles">
+            <h1>AEEIA</h1>
+            <h2>Vote de membre de bureau</h2>
         </div>
-        <div class="id">
-            <h3>tresorier</h3>
-            <br>
-            <p>t</p>
+
+        <div class="carte">
+            <div class="id">
+                <div class="card-header">
+                    <h3>President</h3>
+                    <span class="status-dot"></span>
+                </div>
+                <div class="card-body">
+                    <span class="user-id-label">P</span>
+                    <span class="card-footer-text">Poste 01</span>
+                </div>
+            </div>
+
+            <div class="id">
+                <div class="card-header">
+                    <h3>Vice-President</h3>
+                    <span class="status-dot"></span>
+                </div>
+                <div class="card-body">
+                    <span class="user-id-label">VP</span>
+                    <span class="card-footer-text">Poste 02</span>
+                </div>
+            </div>
+
+            <div class="id">
+                <div class="card-header">
+                    <h3>Tresorier</h3>
+                    <span class="status-dot"></span>
+                </div>
+                <div class="card-body">
+                    <span class="user-id-label">T</span>
+                    <span class="card-footer-text">Poste 03</span>
+                </div>
+            </div>
+
+            <div class="id">
+                <div class="card-header">
+                    <h3>Commissaire au Compte</h3>
+                    <span class="status-dot"></span>
+                </div>
+                <div class="card-body">
+                    <span class="user-id-label">CC</span>
+                    <span class="card-footer-text">Poste 04</span>
+                </div>
+            </div>
+
+            <div class="id">
+                <div class="card-header">
+                    <h3>Secretaire</h3>
+                    <span class="status-dot"></span>
+                </div>
+                <div class="card-body">
+                    <span class="user-id-label">SG</span>
+                    <span class="card-footer-text">Poste 05</span>
+                </div>
+            </div>
         </div>
-        <div class="id">
-            <h3>commissaire au compte </h3>
-            <br>
-            <p>cc</p>
+
+        <div class="btn-container">
+            <a href="loggin.html"><button class="vote-btn">Voter Maintenant</button></a>
         </div>
-        <div class="id">
-            <h3>secretaire general </h3>
-            <br>
-            <p>sg</p>
-        </div>
-        <div class="btn">
-            <a href="loggin.html"><button>vote</button></a>
-        </div>
-    </div>
+    </section>
 </body>
 </html>
